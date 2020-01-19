@@ -1,12 +1,30 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Before;
 import org.junit.Test;
 
-public class VirtualPEtShelterTest {
+public class VirtualPetShelterTest {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
+	VirtualPetShelter virtualPetShelterTestObject;
+	VirtualPet pet1;
+	
+	@Before
+	public void setUp() {
+		virtualPetShelterTestObject = new VirtualPetShelter();
+		pet1 = new VirtualPet("Majima", "Playful, mixed breed", 20, 20, 20, 20);
 	}
-
+	
+	
+	@Test
+	public void whenAddPet() {
+		virtualPetShelterTestObject.add(pet1);
+		VirtualPetShelter addPet = virtualPetShelterTestObject.findPet("Majima");
+		assertThat(addPet, is(pet1));
+	}
+	
+	@Test
+	public void whenRemovePet() {
+		virtualPetShelterTestObject.remove(pet1);
+		assertEquals(null, virtualPetShelterTestObject.remove(pet1));	
+		}
 }
