@@ -6,7 +6,9 @@ public class VirtualPetTest {
 
 	@Test
 	public void feed() {
-		
+		VirtualPet testPet = createDefaultTestPet();
+		testPet.feed();
+		assertEquals(10,testPet.getHunger());
 	}
 	
 	@Test 
@@ -41,6 +43,12 @@ public class VirtualPetTest {
 	
 	@Test
 	public void stats() {
+		
+	}
+	
+	private VirtualPet createDefaultTestPet() {
+		VirtualPet testPet = new VirtualPet("Majima","Playful mix breed", 5, 5, 5, 5, 5);
+		return testPet;
 		
 	}
 }
