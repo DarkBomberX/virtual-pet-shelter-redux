@@ -19,7 +19,13 @@ public class VirtualPet {
 	}
 	
 	public VirtualPet(String name, String description) {
-		
+		this.name = name;
+		this.description = description;
+		this.hunger = 5;
+		this.thirst = 5;
+		this.bordom = 5;
+		this.sleep = 5;
+		this.bathroom = 5;
 	}
 	
 	public void feed() {
@@ -39,11 +45,15 @@ public class VirtualPet {
 	}
 	
 	public void play() {
-		
+		bordom +=4;
 	}
 	
 	public void tick() {
-		
+		hunger--;
+		thirst--;
+		bordom--;
+		sleep--;
+		bathroom--;
 	}
 
 //	Getters
