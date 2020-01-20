@@ -52,8 +52,8 @@ public class VirtualPet {
 		hunger--;
 		thirst--;
 		bordom--;
-		sleep--;
-		bathroom--;
+//		sleep--;
+//		bathroom--;
 	}
 
 //	Getters

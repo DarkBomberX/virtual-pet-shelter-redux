@@ -15,17 +15,17 @@ public class VirtualPetShelter {
 	}
 
 	public void feedAllPet() {
-		for (Map.Entry<String,VirtualPet> entry : pets.entrySet()) {
-	        VirtualPet pet = entry.getValue();
-	        pet.feed();
-	    }
+		for (Map.Entry<String, VirtualPet> entry : pets.entrySet()) {
+			VirtualPet pet = entry.getValue();
+			pet.feed();
+		}
 	}
 
 	public void waterAllPet() {
-		for (Map.Entry<String,VirtualPet> entry : pets.entrySet()) {
-	        VirtualPet pet = entry.getValue();
-	        pet.water();
-	    }
+		for (Map.Entry<String, VirtualPet> entry : pets.entrySet()) {
+			VirtualPet pet = entry.getValue();
+			pet.water();
+		}
 	}
 
 	public void playWithPet(String name) {
@@ -33,10 +33,10 @@ public class VirtualPetShelter {
 	}
 
 	public void tickAll() {
-		for (Map.Entry<String,VirtualPet> entry : pets.entrySet()) {
-	        VirtualPet pet = entry.getValue();
-	        pet.tick();
-	    }
+		for (Map.Entry<String, VirtualPet> entry : pets.entrySet()) {
+			VirtualPet pet = entry.getValue();
+			pet.tick();
+		}
 	}
 
 	public Map<String, VirtualPet> showAllPets() {
@@ -46,4 +46,5 @@ public class VirtualPetShelter {
 	public VirtualPet showOnePet(String name) {
 		return pets.get(name);
 	}
+
 }
