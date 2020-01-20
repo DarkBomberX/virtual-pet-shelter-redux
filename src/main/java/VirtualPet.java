@@ -27,15 +27,15 @@ public class VirtualPet {
 	}
 	
 	public void water() {
-		
+		thirst +=6;
 	}
 	
 	public void rest() {
-		
+		sleep +=10;
 	}
 
 	public void bathroom() {
-		
+		bathroom +=2;
 	}
 	
 	public void play() {

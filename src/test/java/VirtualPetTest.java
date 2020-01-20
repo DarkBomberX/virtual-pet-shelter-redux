@@ -21,21 +21,28 @@ public class VirtualPetTest {
 	
 	@Test
 	public void rest() {
-		
+		VirtualPet testPet = createDefaultTestPet();
+		testPet.rest();
+		assertEquals(15,testPet.getSleep());
 	}
 
 	@Test
 	public void bathroom() {
-		
+		VirtualPet testPet = createDefaultTestPet();
+		testPet.bathroom();
+		assertEquals(7,testPet.getBathroom());
 	}
 	
 	@Test
 	public void play() {
-		
+		VirtualPet testPet = createDefaultTestPet();
+		testPet.play();
+		assertEquals(9,testPet.getBordom());
 	}
 	
 	@Test
 	public void tick() {
+		VirtualPet testPet = createDefaultTestPet();
 		
 	}
 	
