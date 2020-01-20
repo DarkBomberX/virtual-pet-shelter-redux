@@ -13,6 +13,9 @@ public class VirtualPetTest {
 	
 	@Test 
 	public void water() {
+		VirtualPet testPet = createDefaultTestPet();
+		testPet.water();
+		assertEquals(11,testPet.getThirst());
 		
 	}
 	
