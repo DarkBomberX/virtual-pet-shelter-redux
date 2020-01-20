@@ -5,8 +5,8 @@ public class VirtualPetShelter {
 
 	Map<String, VirtualPet> pets = new HashMap<String, VirtualPet>();
 	
-	public void boardPet() {
-		
+	public void boardPet(VirtualPet petToBoard) {
+		pets.put(petToBoard.getName(), petToBoard);
 	}
 	
 	public void adoptPet() {
@@ -29,11 +29,11 @@ public class VirtualPetShelter {
 		
 	}
 	
-	public void showAllPets() {
-		
+	public Map<String, VirtualPet> showAllPets() {
+		return pets;
 	}
 
-	public void showOnePet() {
-		
+	public VirtualPet showOnePet(String name) {
+		return null;
 	}
 }
