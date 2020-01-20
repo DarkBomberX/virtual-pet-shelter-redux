@@ -1,6 +1,10 @@
+import java.util.HashMap;
+import java.util.Map;
 
 public class VirtualPetShelter {
 
+	Map<String, VirtualPet> pets = new HashMap<String, VirtualPet>();
+	
 	public void boardPet() {
 		
 	}

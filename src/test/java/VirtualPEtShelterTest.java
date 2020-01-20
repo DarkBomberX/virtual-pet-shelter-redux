@@ -10,12 +10,13 @@ public class VirtualPetShelterTest {
 
 	@Before
 	public void setUp() {
-		
+		virtualPetShelterTestObject = new VirtualPetShelter();
 	}
 
 	@Test
 	public void boardPet() {
-		
+		virtualPetShelterTestObject.boardPet();
+		assertEquals(1,virtualPetShelterTestObject.pets.size());
 	}
 
 	@Test
