@@ -1,4 +1,4 @@
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,24 +7,49 @@ public class VirtualPetShelterTest {
 
 	VirtualPetShelter virtualPetShelterTestObject;
 	VirtualPet pet1;
-	
+
 	@Before
 	public void setUp() {
-		virtualPetShelterTestObject = new VirtualPetShelter();
-		pet1 = new VirtualPet("Majima", "Playful, mixed breed", 20, 20, 20, 20);
+		
+	}
+
+	@Test
+	public void boardPet() {
+		
+	}
+
+	@Test
+	public void adoptPet() {
+		
 	}
 	
-	
 	@Test
-	public void whenAddPet() {
-		virtualPetShelterTestObject.add(pet1);
-		VirtualPetShelter addPet = virtualPetShelterTestObject.findPet("Majima");
-		assertThat(addPet, is(pet1));
+	public void feedAllPets() {
+		
 	}
 	
 	@Test
-	public void whenRemovePet() {
-		virtualPetShelterTestObject.remove(pet1);
-		assertEquals(null, virtualPetShelterTestObject.remove(pet1));	
-		}
+	public void waterAllPets() {
+		
+	}
+	
+	@Test
+	public void playWithPet() {
+		
+	}
+	
+	@Test
+	public void tickAll() {
+		
+	}
+	
+	@Test
+	public void seeAllPets() {
+		
+	}
+	
+	@Test
+	public void seeOnePet() {
+		
+	}
 }
