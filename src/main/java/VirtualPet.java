@@ -8,15 +8,15 @@ public class VirtualPet {
 	private int sleep;
 	private int bathroom;
 
-	public VirtualPet(String name, String description, int hunger, int thirst, int bordom, int sleep, int bathroom) {
-		this.name = name;
-		this.description = description;
-		this.hunger = hunger;
-		this.thirst = thirst;
-		this.bordom = bordom;
-		this.sleep = sleep;
-		this.bathroom = bathroom;
-	}
+//	public VirtualPet(String name, String description, int hunger, int thirst, int bordom, int sleep, int bathroom) {
+//		this.name = name;
+//		this.description = description;
+//		this.hunger = hunger;
+//		this.thirst = thirst;
+//		this.bordom = bordom;
+//		this.sleep = sleep;
+//		this.bathroom = bathroom;
+//	}
 	
 	public VirtualPet(String name, String description) {
 		this.name = name;

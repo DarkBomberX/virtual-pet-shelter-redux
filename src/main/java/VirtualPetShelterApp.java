@@ -11,7 +11,7 @@ public class VirtualPetShelterApp {
 			System.out.println("Welcome to Eddie's Pet Shelter!");
 			tellOptions();
 
-			String pick = input.nextLine();
+			String pick = input.nextLine().toUpperCase();
 
 			if (pick.equals("1")) {
 				boardPet(input,virtualPetShelter);
